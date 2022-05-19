@@ -4,8 +4,8 @@ pipeline {
     stage('Start Build') {
       steps {
         echo 'Start Build'
-        sh '''go mod init
-go build'''
+        sh '''
+go build -o GoGameServer'''
       }
     }
 
