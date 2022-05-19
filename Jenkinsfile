@@ -4,8 +4,8 @@ pipeline {
     stage('Start Build') {
       steps {
         echo 'Start Build'
-        sh '''
-go build -o GoGameServer'''
+        sh '''export GO111MODULE=auto
+go build'''
       }
     }
 
