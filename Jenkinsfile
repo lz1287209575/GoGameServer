@@ -4,7 +4,8 @@ pipeline {
     stage('Start Build') {
       steps {
         echo 'Start Build'
-        sh 'go build'
+        sh '''go mod init
+go build'''
       }
     }
 
